@@ -14,7 +14,6 @@ githubs:Github[];
   constructor(public Gitservice: GitserviceService) {
    }
 
-
   ngOnInit() {
     this.searchGit("alex-muliande");
   }
