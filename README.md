@@ -19,10 +19,8 @@ Alex Muliande.
 2.You can use this command (git clone *my link*) to clone the project to your machine if you have git .
 3.Run ng serve -o from your terminal to compile and open the web app.
 
-
 ## Technologies used
 *Angular CLI
-
 
 ## Development server
 
