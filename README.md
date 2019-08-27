@@ -4,19 +4,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 A website application where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories in this website application.
-A link to my live page 
+A link to my live page https://alex-muliande.github.io/github/profiles
 
 ## Author
 Alex Muliande.
 ## Behaviour Driven Development BDD 
 ### Functions of the Webapplication
 1.The app should be able to allow the user to type in their github names and search hence getting back their profiles .
+
 2.It has also provided a button that helps you acess your official github repository.
+
 3.The app allows the user to click on abutton that takes them to a page with a list of their repositories.
+
 
 ## Setup/Installation requirements
 1.Clone or download and unzip the repository from github,https://github.com/alex-muliande/github.git
+
 2.You can use this command (git clone *my link*) to clone the project to your machine if you have git .
+
 3.Run ng serve -o from your terminal to compile and open the web app.
 
 ## Technologies used
