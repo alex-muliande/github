@@ -8,9 +8,9 @@ describe('GitNavbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GitNavbarComponent ]
+      declarations: [GitNavbarComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

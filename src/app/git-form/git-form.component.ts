@@ -7,15 +7,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class GitFormComponent implements OnInit {
 
-@Output () emitSearch = new EventEmitter<any>()
+  @Output() emitSearch = new EventEmitter<any>()
 
-  searchTerm:string;
-    constructor() { }
-    
-search(){
-  this.emitSearch.emit(this.searchTerm)
-  // console.log(this.searchTerm)
-}
+  searchTerm: string;
+  constructor() { }
+
+  search() {
+    this.emitSearch.emit(this.searchTerm)
+    // console.log(this.searchTerm)
+  }
 
 
 
