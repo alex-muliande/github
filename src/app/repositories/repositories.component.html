@@ -2,13 +2,13 @@
 <!-- <body> -->
 <div class="bg">
   <div class="jumbotron bg-info">
-    <h1>Welcome to Repositories</h1>
+    <h1 style="text-align: center">Welcome to Repositories</h1>
     <hr class="my-4">
-    <p class="lead text-center">An Angular app that let's you find Git Profiles</p>
+    <p class="lead text-center">An application that let's you find your Git Profiles</p>
   </div>
-  <!-- Designed by Joseph Adediji -->
+ 
 
-  <!-- this is the section that contains the search form  -->
+ 
   <div class="container">
     <h4 class="text-center h4 text-white text-white">Check Out Github User Repositories Here!</h4>
     <app-git-form (emitSearch)="searchRepo($event)"></app-git-form>
@@ -17,7 +17,7 @@
 
 
   <!-- This is the section for displaying user profiles -->
-  <h2 class="text-center h2 h2-responsive text-white animated swing delay-3s">{{searchTerm}} GITHUB REPOSITORIES </h2>
+  <h2 class="text-center">{{searchTerm}} GITHUB REPOSITORIES </h2>
   <div class="container card-columns">
     <div class="card" *ngFor="let gitrepo of gitrepos">
       <div class="card">

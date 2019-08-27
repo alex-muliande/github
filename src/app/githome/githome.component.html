@@ -2,28 +2,29 @@
 <body>
     <div class="bg">
     <div>
-      <h1>Welcome to Github Search Master</h1>
-      <hr class="my-4">
+      <h1 style="text-align: center">Welcome to Github Search Master</h1>
+      <!-- <hr class="my-4"> -->
       <p class="text-center">An Application that let's you find Your Profile and Repository</p>
     </div>
  
    
     <div class="container">
-      <h4 class="text-center h4 text-white text-white">Check Out Github User Profiles Here!</h4>
+      <h4 class="text-center">Check Out Github User Profiles Here!</h4>
       <app-git-form (emitSearch)="searchGit($event)"></app-git-form>
-      <hr>
+      
     </div>
     
   
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6">
+        <div class=
+        "col-lg-6">
           <div class="container">
             <div class="">
               <div *ngFor="let github of githubs">
                 <br><br>
                 <div class="text-center mt-4 pt-5 ml-4">
-                  <img src="{{github.avatar_url}}">
+                  <img src="{{github.avatar_url}}" width="400" height="350">
                 </div>
               </div>
             </div>
@@ -62,5 +63,6 @@
       </div>
     </div>
     </div>
+  
     </body>
    

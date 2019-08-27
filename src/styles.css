@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+/* body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/09/01/19/53/pocket-watch-1637396__340.jpg');
+    background-size: cover;
+} */
+@import "~bootstrap/dist/css/bootstrap.css";
