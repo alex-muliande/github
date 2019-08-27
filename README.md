@@ -12,7 +12,7 @@ Alex Muliande.
 ### Functions of the Webapplication
 1.The app should be able to allow the user to type in their github names and search hence getting back their profiles .
 2.It has also provided a button that helps you acess your official github repository.
-3.The app allows the user to click on abutton that takes them to apage with alist of their repositories.
+3.The app allows the user to click on abutton that takes them to a page with a list of their repositories.
 
 ## Setup/Installation requirements
 1.Clone or download and unzip the repository from github,https://github.com/alex-muliande/github.git
