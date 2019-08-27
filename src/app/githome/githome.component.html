@@ -1,6 +1,6 @@
 <!-- body section starts here -->
 <body>
-    <div class="bg">
+    <div class="">
     <div>
       <h1 style="text-align: center">Welcome to Github Search Master</h1>
       <!-- <hr class="my-4"> -->
@@ -9,7 +9,6 @@
  
    
     <div class="container">
-      <h4 class="text-center">Check Out Github User Profiles Here!</h4>
       <app-git-form (emitSearch)="searchGit($event)"></app-git-form>
       
     </div>
@@ -17,13 +16,12 @@
   
     <div class="container-fluid">
       <div class="row">
-        <div class=
-        "col-lg-6">
+        <div class="col-md-6">
           <div class="container">
             <div class="">
               <div *ngFor="let github of githubs">
                 <br><br>
-                <div class="text-center mt-4 pt-5 ml-4">
+                <div class="text-center">
                   <img src="{{github.avatar_url}}" width="400" height="350">
                 </div>
               </div>
@@ -33,14 +31,14 @@
     
         </div>
         
-        <div class="col-lg-6 mt-4">
-          <div class="container mt-4">
+        <div class="col-md-6 ">
+          <!-- <div class="container "> -->
             <h2>GITHUB PROFILE DETAILS</h2>
-            <div class="jumbotron">
+            <!-- <div class="jumbotron"> -->
               <div *ngFor="let github of githubs">
-                    <div class="row">
+                    <!-- <div class="row"> -->
                 <div class="">
-                  <p appHighlight class="lead"> <strong>Name:</strong> {{github.name}}</p>
+                  <p appHighlight > <strong>Name:</strong> {{github.name}}</p>
                   <p appHighlight> <strong>Username:</strong> {{github.login}}</p>
                   <p appHighlight> <strong>Bio:</strong> {{github.bio}}</p>
                   <p appHighlight> <strong>Public Repos:</strong> {{github.public_repos}}</p>
@@ -52,10 +50,10 @@
                     target="_blank"><button type="button" class="btn btn"><i class="far fa-user pr-2" aria-hidden="true"></i>View Profile on Github</button></a></p>
                     <br>
                 </div>
-              </div>
-            </div>
+              <!-- </div> -->
+            <!-- </div> -->
     
-          </div>
+          <!-- </div> -->
     
         </div>
     </div>
