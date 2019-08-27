@@ -1,19 +1,18 @@
 <!-- body section starts here -->
+
 <body>
-    <div class="">
+  <div class="">
     <div>
       <h1 style="text-align: center">Welcome to Github Search Master</h1>
       <!-- <hr class="my-4"> -->
       <p class="text-center">An Application that let's you find Your Profile and Repository</p>
     </div>
- 
-   
+
+
     <div class="container">
       <app-git-form (emitSearch)="searchGit($event)"></app-git-form>
-      
+
     </div>
-    
-  
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
@@ -27,40 +26,39 @@
               </div>
             </div>
           </div>
-    
-    
+
+
         </div>
-        
+
         <div class="col-md-6 ">
           <!-- <div class="container "> -->
-            <h2>GITHUB PROFILE DETAILS</h2>
-            <!-- <div class="jumbotron"> -->
-              <div *ngFor="let github of githubs">
-                    <!-- <div class="row"> -->
-                <div class="">
-                  <p appHighlight > <strong>Name:</strong> {{github.name}}</p>
-                  <p appHighlight> <strong>Username:</strong> {{github.login}}</p>
-                  <p appHighlight> <strong>Bio:</strong> {{github.bio}}</p>
-                  <p appHighlight> <strong>Public Repos:</strong> {{github.public_repos}}</p>
-                  <p appHighlight> <strong>Followers:</strong> {{github.followers}}</p>
-                  <p appHighlight> <strong>Following:</strong> {{github.following}}</p>
-                  <p appHighlight> <strong>Location:</strong> {{github.location}}</p>
-                  <p appHighlight> <strong>Join Date:</strong> {{github.created_at |date}}</p>
-                  <p><a href="{{github.html_url}}"
-                    target="_blank"><button type="button" class="btn btn"><i class="far fa-user pr-2" aria-hidden="true"></i>View Profile on Github</button></a></p>
-                    <br>
-                </div>
-              <!-- </div> -->
+          <h2>GITHUB PROFILE DETAILS</h2>
+          <!-- <div class="jumbotron"> -->
+          <div *ngFor="let github of githubs">
+            <!-- <div class="row"> -->
+            <div class="">
+              <p appHighlight> <strong>Name:</strong> {{github.name}}</p>
+              <p appHighlight> <strong>Username:</strong> {{github.login}}</p>
+              <p appHighlight> <strong>Bio:</strong> {{github.bio}}</p>
+              <p appHighlight> <strong>Public Repos:</strong> {{github.public_repos}}</p>
+              <p appHighlight> <strong>Followers:</strong> {{github.followers}}</p>
+              <p appHighlight> <strong>Following:</strong> {{github.following}}</p>
+              <p appHighlight> <strong>Location:</strong> {{github.location}}</p>
+              <p appHighlight> <strong>Join Date:</strong> {{github.created_at |date}}</p>
+              <p><a href="{{github.html_url}}" target="_blank"><button type="button" class="btn btn"><i
+                      class="far fa-user pr-2" aria-hidden="true"></i>View Profile on Github</button></a></p>
+              <br>
+            </div>
             <!-- </div> -->
-    
-          <!-- </div> -->
-    
+            <!-- </div> -->
+
+            <!-- </div> -->
+
+          </div>
         </div>
-    </div>
-    
+
       </div>
     </div>
-    </div>
-  
-    </body>
-   
+  </div>
+
+</body>

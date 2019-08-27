@@ -1,12 +1,12 @@
 <!-- body section starts here -->
 <!-- <body> -->
 <div class="bg">
-  <div >
+  <div>
     <h1 style="text-align: center">Welcome to Repositories</h1>
     <hr>
     <p class="lead text-center">Type in your username:</p>
   </div>
- 
+
   <div class="container">
     <app-git-form (emitSearch)="searchRepo($event)"></app-git-form>
     <hr>
@@ -17,7 +17,9 @@
   <div class="container card-columns">
     <div class="card" *ngFor="let gitrepo of gitrepos">
       <div class="card">
-        <div class="card-header"><h2>{{gitrepo.name}}</h2></div>
+        <div class="card-header">
+          <h2>{{gitrepo.name}}</h2>
+        </div>
         <div class="card-body">
           <p class="card-text"><strong>Description: </strong>{{gitrepo.description}}</p>
           <p class="card-text"><strong>Create at: </strong>{{gitrepo.created_at|date}}</p>
